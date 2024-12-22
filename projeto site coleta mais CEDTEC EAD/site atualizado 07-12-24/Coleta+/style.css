@@ -1,0 +1,256 @@
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do body */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Tipografia moderna e legível */
+    line-height: 1.8;
+    color: #333; /* Texto em tom neutro para melhor leitura */
+    background-color: #6c966f; /* Fundo suave */
+    overflow-x: hidden;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-image: linear-gradient(50deg, #1f4b20, #3f8b51); /* Gradiente para o cabeçalho */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    height: 60px;
+    width: auto;
+}
+
+header .navegacao ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+header .navegacao ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+header .navegacao ul li a:hover {
+    background: #b7e4c7;
+    color: #087f23;
+    transform: scale(1.1);
+}
+
+/* Container principal */
+#container1, #container2 {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    font-weight: bold;
+    text-align: center;
+    color: #082e11;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem; /* Grande destaque para o título principal */
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* Parágrafos */
+p {
+    font-size: 1.1rem;
+    color: #000000; /* Cor suave para leitura confortável */
+    margin-bottom: 15px;
+    text-align: justify; /* Justifica os textos para um visual mais organizado */
+    padding: 0 10px;
+}
+
+/* Seção "Quem Somos" */
+#container2 {
+    padding: 30px;
+    background-image: linear-gradient(45deg, #208a44, #e3f5e4);
+}
+
+#container2 p {
+    padding: 0 20px;
+    font-size: 1.2rem;
+}
+
+/* Seções de introdução */
+.introducao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.introducao .imagem-introducao {
+    flex: 1;
+    min-width: 300px;
+    height: 200px;
+    background: url('./imagens/imagem-introdução.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.introducao .texto-introducao {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    background-color: #77b16a;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.introducao .texto-introducao h3 {
+    color: #087f23;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.introducao .texto-introducao p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.terceira1div, .terceira2div, .principios, .valores{
+    flex: 1;
+    padding-left: 5px;
+    text-align: left;
+    background-image: linear-gradient(45deg, #56a55a, #ddfcdf);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quem-somos{
+    flex: 1;
+    padding-left: 5px;
+    text-align: left;
+    background-image: linear-gradient(45deg, #5aa05e, #ddfcdf);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Botões principais */
+.cta-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #087f23;
+}
+
+/* Estilo de listas */
+ul {
+
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+li {
+    list-style: none;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+li::before {
+    content: "•";
+    color: #087f23;
+    margin-right: 10px;
+}
+
+.terceira1 p, .terceira2 p{
+    text-align: center;
+}
+
+/* Rodapé */
+footer {
+    background-color: #087f23;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #b7e4c7;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introducao {
+        flex-direction: column;
+    }
+
+    .introducao .texto-introducao {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header .navegacao ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header .navegacao ul li a {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .introducao .imagem-introducao {
+        height: 150px;
+    }
+
+    .cta-button {
+        width: 100%;
+    }
+}

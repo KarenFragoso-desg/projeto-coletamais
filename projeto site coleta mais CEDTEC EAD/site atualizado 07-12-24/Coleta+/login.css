@@ -1,0 +1,54 @@
+/* ESSE É O ESTILO DA PAG DE LOGIN */
+
+#login{
+    background-image: linear-gradient(45deg, rgb(47, 77, 39), rgb(211, 236, 201));
+    position: relative;
+    min-height: 100vh;
+}
+
+.tela-login h1{
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.tela-login{
+    background-color: rgba(133, 214, 114, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 15px;
+    color: rgb(31, 56, 24);
+}
+
+.campos-login{
+    padding: 15px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.enviar-login{
+    background-color: rgb(21, 59, 41);
+    border: none;
+    font-size: 15px;
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    background-image: linear-gradient(45deg, rgb(91, 156, 76), rgb(81, 117, 79) );
+}
+
+.enviar-login:hover{
+background: rgb(144,189,128);
+}
+
+.h4-login{
+    color: rgb(255, 255, 255);
+}
+
+.cadastro-login{
+
+    color: rgb(4, 19, 0);
+}
